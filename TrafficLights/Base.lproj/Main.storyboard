@@ -31,7 +31,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-uU-K27">
                                 <rect key="frame" x="132" y="726" width="150" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="8RL-jk-dtQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +62,12 @@
                             <constraint firstItem="77F-an-URO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="yRN-Ue-x1d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="dqb-uU-K27" id="V6Q-1r-LRZ"/>
+                        <outlet property="greenLight" destination="77F-an-URO" id="HR7-V9-G9N"/>
+                        <outlet property="redLight" destination="rh7-vW-J6o" id="oaG-Vq-Pkr"/>
+                        <outlet property="yellowLight" destination="3jA-LC-oUU" id="D1H-5W-Bfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
